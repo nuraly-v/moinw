@@ -29,6 +29,6 @@ df = pd.DataFrame({
 # Format and save
 df["time"] = pd.to_datetime(df["time"])
 df.set_index("time", inplace=True)
-df.to_csv("bremen_forecast.csv")
+df.to_csv("../data/bremen_forecast.csv")
 
-print("Saved forecast data to bremen_forecast.csv")
+print("Saved forecast data to data/bremen_forecast.csv")
